@@ -1,0 +1,296 @@
+/* --------------- fonts ------------------ */
+@import url(https://fonts.googleapis.com/css?family=Caveat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Caveat+Brush);
+/* --------------- variables ------------------ */
+/* --------------- general ------------------ */
+html {
+  padding: 25px;
+  background: white;
+}
+
+body {
+  font-family: "Caveat", cursive;
+  background: #fffdf3;
+  /*---#FFFDF3--- */
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  padding: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+  margin: 0;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.fl-box {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  padding: 50px 0;
+  font-size: 2.5em;
+}
+
+/* --------------- section 1 - hero ------------------ */
+section.hero {
+  background-image: url(../img/design-bg.png);
+  padding: 50px 0 150px 0;
+}
+section.hero:before {
+  content: "";
+  width: 130px;
+  height: 400px;
+  position: absolute;
+  right: 150px;
+  top: -20px;
+  margin: 0;
+  background: url(../img/bird.svg) no-repeat center;
+  background-size: 100%;
+}
+section.hero:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  height: 120px;
+  z-index: 10;
+  margin-top: 70px;
+  background: url(../img/line.svg) no-repeat;
+  background-size: 100% auto;
+}
+section.hero .back-top {
+  position: absolute;
+  width: 100%;
+  top: 35px;
+}
+section.hero .intro {
+  text-align: center;
+  font-family: "Caveat Brush", cursive;
+  font-size: 1.8em;
+}
+section.hero .intro figure {
+  margin: 5px 0;
+}
+section.hero .intro h5 {
+  color: #5f4444;
+}
+section.hero .intro svg {
+  width: 100%;
+  max-width: 12em;
+  height: auto;
+}
+section.hero .names {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 80px 0;
+  font-family: "Caveat", cursive;
+  font-size: 2.8em;
+  text-align: center;
+  max-width: 800px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+section.hero .names h1 {
+  font-weight: normal;
+  font-size: 1.8em;
+  margin: 0;
+  color: #3f3030;
+}
+section.hero .names span {
+  padding: 50px 0;
+  vertical-align: middle;
+  font-family: "Caveat Brush", cursive;
+  color: #3f3030;
+}
+section.hero .location {
+  padding: 20px 0 80px 0;
+}
+section.hero .location .content {
+  text-align: center;
+  font-size: 2em;
+}
+section.hero .location .content:after {
+  content: "";
+  width: 220px;
+  height: 103px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: url(../img/location-down.svg) no-repeat center;
+  background-size: 100%;
+}
+section.hero .location p {
+  font-family: "Caveat", cursive;
+  font-size: 1.5em;
+  color: #ff868c;
+  margin: 0;
+}
+section.hero .location h1 {
+  font-family: "Caveat Brush", cursive;
+  font-size: 4em;
+  color: #ff868c;
+}
+
+section.they {
+  text-align: center;
+  background-image: url(../img/design-bg.png);
+}
+section.they h2 {
+  font-family: "Caveat", cursive;
+  font-size: 4.2em;
+  color: #3f3030;
+  letter-spacing: 0px;
+}
+section.they .pics .pic img {
+  border-radius: 50%;
+  max-width: 350px;
+}
+section.they .pics .pic:after {
+  content: "";
+  width: 85px;
+  height: 130px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: -80px;
+  background: url(../img/love.svg) no-repeat center;
+  background-size: 100%;
+  z-index: 2;
+}
+
+section.place {
+  background: white;
+}
+section.place .info {
+  max-width: 500px;
+}
+section.place .info h1 {
+  font-family: "Caveat Brush", cursive;
+  font-size: 1em;
+  color: #3f3030;
+}
+section.place .info h1:after {
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #3f3030;
+  content: "";
+  margin-top: 5px;
+}
+section.place .info h2 {
+  padding-top: 50px;
+  font-size: 1.5em;
+  color: #3f3030;
+}
+section.place .info a {
+  font-size: 0.8em;
+  color: #ff868c;
+}
+section.place .pics .place1, section.place .pics .place2 {
+  width: 100%;
+  max-width: 470px;
+  height: auto;
+  display: block;
+}
+
+section.subscribe {
+  background: #ffe9e9;
+  padding-top: 80px;
+}
+section.subscribe .form {
+  text-align: center;
+}
+section.subscribe .form .end {
+  margin: 100px 0 5px 0;
+}
+section.subscribe .form h1 {
+  font-size: 3em;
+  margin-bottom: 80px;
+}
+section.subscribe .form label {
+  display: block;
+  font-size: 2em;
+  color: #3f3030;
+}
+section.subscribe .form .form-group input {
+  background: transparent;
+  border: 1px solid #3f3030;
+  font-size: 1.5em;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin: 15px;
+}
+section.subscribe .form .section-sendmail input {
+  background: #3f3030;
+  color: #ffe9e9;
+  padding: 5px 30px;
+  font-size: 2em;
+  border-style: none;
+  font-family: "Caveat", cursive;
+  margin-top: 20px;
+  transition: 0.5s ease;
+}
+section.subscribe .form .section-sendmail input:hover {
+  background-color: white;
+  color: #3f3030;
+  transition: 0.5s ease;
+}
+
+@media screen and (max-width: 875px) {
+  .names {
+    flex-direction: column !important;
+  }
+
+  .place .fl-box {
+    flex-direction: column;
+  }
+  .place .fl-box .info {
+    max-width: none;
+    width: 100%;
+    text-align: center;
+  }
+  .place .fl-box .info h1 {
+    text-align: center;
+  }
+  .place .fl-box .info h1:after {
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .place .fl-box .pics {
+    margin-top: 40px;
+  }
+  .place .fl-box .pics img {
+    max-width: none;
+    text-align: center;
+  }
+
+  section.hero:before {
+    display: none;
+  }
+}
+@media screen and (max-width: 680px) {
+  html {
+    padding: 0;
+  }
+
+  section.subscribe .form .form-group input {
+    max-width: none;
+    width: auto;
+  }
+}
