@@ -154,6 +154,17 @@ section.they h2 {
   color: #3f3030;
   letter-spacing: 0px;
 }
+section.they h2:after {
+    display: block;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 3px;
+    background: #3f3030;
+    content: "";
+    margin-top: 5px;
+}
 section.they .pics  img {
 
   max-width: 250px;
@@ -218,8 +229,23 @@ section.subscribe .form .end {
   margin: 100px 0 5px 0;
 }
 section.subscribe .form h1 {
-  font-size: 3em;
-  margin-bottom: 80px;
+  font-size: 3.5em;
+  margin-bottom: 30px;
+}
+section.subscribe .form h1:after {
+    display: block;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 3px;
+    background: #3f3030;
+    content: "";
+    margin-top: 5px;
+}
+section.subscribe .form p {
+  font-size: 1.8em;
+  margin-bottom: 90px;
 }
 section.subscribe .form label {
   display: block;
