@@ -154,22 +154,10 @@ section.they h2 {
   color: #3f3030;
   letter-spacing: 0px;
 }
-section.they .pics  img {
-
-  max-width: 250px;
-}
-section.they:after {
-  content: "";
-  width: 85px;
-  height: 130px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  margin-top: -420px;
-  background: url(../img/love.svg) no-repeat center;
-  background-size: 100%;
-  z-index: 2;
+section.they .pics .she img {
+  border-radius: 50%;
+  max-width: 350px;
+  height: auto;
 }
 
 section.place {
@@ -257,7 +245,7 @@ section.subscribe .form .section-sendmail input:hover {
     flex-direction: column !important;
   }
 
-  .fl-box {
+  .place .fl-box {
     flex-direction: column;
   }
   .place .fl-box .info {
@@ -283,11 +271,6 @@ section.subscribe .form .section-sendmail input:hover {
 
   section.hero:before {
     display: none;
-  }
-  section.they:after {
-
-    margin-top: -10px;
-
   }
 }
 @media screen and (max-width: 680px) {
